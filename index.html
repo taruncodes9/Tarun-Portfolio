@@ -15,7 +15,8 @@
             margin: 0;
             padding: 0;
         }
-        .icon{
+
+        .icon {
             border-radius: 50px;
         }
 
@@ -84,17 +85,27 @@
 
 
         }
-        .leftsection .button{
+
+        .leftsection .button {
             padding: 50px 0;
         }
-        .leftsection .btn{
+
+        .leftsection .btn {
             padding: 12px;
-            background:#1e2167;
+            background: #1e2167;
             color: white;
             border: 2px solid white;
             border-radius: 6px;
             font-size: 20px;
-            cursor:pointer;
+            cursor: pointer;
+
+        }
+
+        .leftsection .btn a {
+            text-decoration: none;
+            background: #1e2167;
+            color: white;
+            cursor: pointer;
 
         }
 
@@ -115,6 +126,54 @@
 
         #element {
             color: blueviolet;
+        }
+
+        .thirdsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .thirdsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .thirdsection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .thirdsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+
+        .image-top {
+            position: relative;
+            top: -32px;
+            left: -9px;
+            width: 23px;
+        }
+
+        .vertical-text {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 20px;
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 78px;
+            color: gray;
+            width: 150px;
+            font-size: 11px;
         }
 
         .secondsection {
@@ -153,6 +212,7 @@
             position: relative;
             top: 75px;
             width: 150px;
+            font-size: 20px;
 
         }
 
@@ -160,8 +220,9 @@
             position: relative;
             top: 78px;
             color: gray;
-            width: 150px;
-            font-size: 9px;
+            width: 160px;
+            font-size: 12px;
+            /* text-align:justify; */
         }
 
         footer {
@@ -174,14 +235,17 @@
             padding: 32px 123px;
             justify-content: space-evenly;
         }
-        .footer ul{
+
+        .footer ul {
             list-style: none;
 
         }
-        .footer >div{
+
+        .footer>div {
             width: 233px;
         }
-        .footer-rights{
+
+        .footer-rights {
             text-align: center;
             color: grey;
             padding: 12px;
@@ -215,62 +279,116 @@
                 <!-- <div>Web Developer</div> -->
                 <span id="element"></span>
                 <div class="button">
-                <button class="btn">Download Resume</button>
-                <button class="btn">Visit Github</button>
-            </div>
+                    <button class="btn"><a href="./Tarun _Chhabra.pdf">Download Resume</a></button>
+                    <button class="btn"><a href="https://github.com/taruncodes9">Github Profile</a></button>
+                </div>
             </div>
             <div class="rightsection">
                 <img src="developer.png" alt="">
             </div>
         </section>
-        <section class="secondsection">
+        <section class="thirdsection">
             <hr>
-            <span class="text-gray">What I have done so far</span>
-            <h1>Work Exprience</h1>
+            <!-- <span class="text-gray">What I have done so far</span> -->
+            <h1>Key Skills</h1>
 
             <div class="box">
                 <div class="vertical">
                     <img class="image-top" src="html.png" alt="">
                     <div class="vertical-text">
-                        Html Developer (2010-2012)
+                        Html, CSS
                     </div>
-                    <div class="vertical-desc">
+                    <!-- <div class="vertical-desc">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat eaque beatae sequi
                         inventore recusandae totam, enim nihil adipisci minus nemo dolor cupiditate ullam temporibus
                         asperiores aliquid voluptatibus perferendis nobis?
+                    </div> -->
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="nodejs.png" alt="">
+                    <div class="vertical-text">
+                        JavaScript
+                    </div>
+                    <!-- <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat eaque beatae sequi
+                        inventore recusandae totam, enim nihil adipisci minus nemo dolor cupiditate ullam temporibus
+                        asperiores aliquid voluptatibus perferendis nobis?
+                    </div> -->
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="nodejs.png" alt="">
+                    <div class="vertical-text">
+                        php
+                    </div>
+                    <!-- <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat eaque beatae sequi
+                        inventore recusandae totam, enim nihil adipisci minus nemo dolor cupiditate ullam temporibus
+                        asperiores aliquid voluptatibus perferendis nobis?
+                    </div> -->
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="youtube.png" alt="">
+                    <div class="vertical-text">
+                        MySQL
+                    </div>
+                    <!-- <div class="vertical-desc">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat eaque beatae sequi
+                            inventore recusandae totam, enim nihil adipisci minus nemo dolor cupiditate ullam temporibus
+                            asperiores aliquid voluptatibus perferendis nobis?
+                        </div> -->
+                </div>
+
+            </div>
+
+
+        </section>
+        <section class="secondsection">
+            <hr>
+            <span class="text-gray">What I have done so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-text">
+                        Netflix Clone Web App
+                    </div>
+                    <div class="vertical-desc">
+                        Developed a Netflix Clone Web App as part of a comprehensive web development
+                        project, showcasing proficiency in HTML, CSS and JavaScript.
+
                     </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="nodejs.png" alt="">
                     <div class="vertical-text">
-                        Java Developer (2012-2014)
+                        ScanDine Web App
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat eaque beatae sequi
-                        inventore recusandae totam, enim nihil adipisci minus nemo dolor cupiditate ullam temporibus
-                        asperiores aliquid voluptatibus perferendis nobis?
+                        Developed the ScanDine project, enabling customers to scan and order food;
+                        implemented PHP and SQL for back-end, enhancing server-side programming and
+                        managing databases to increase order processing speed by 40%.
                     </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="nodejs.png" alt="">
                     <div class="vertical-text">
-                        Node.JS Developer (2014-2016)
+                        Registration Form
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat eaque beatae sequi
-                        inventore recusandae totam, enim nihil adipisci minus nemo dolor cupiditate ullam temporibus
-                        asperiores aliquid voluptatibus perferendis nobis?
+                        Created a registration form using React and MongoDB, with user authentication
+                        and data validation, ensuring a smooth and secure sign-up process.
                     </div>
                 </div>
                 <div class="vertical">
                     <img class="image-top" src="youtube.png" alt="">
                     <div class="vertical-text">
-                        Pro Video-Editor (2014-2016)
+                      Spotify Clone Web App
                     </div>
                     <div class="vertical-desc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt fugiat eaque beatae sequi
-                        inventore recusandae totam, enim nihil adipisci minus nemo dolor cupiditate ullam temporibus
-                        asperiores aliquid voluptatibus perferendis nobis?
+                        Created a Spotify Clone web app using HTML and  CSS demonstrating
+                        expertise in front-end development and user interface design.
+                        
                     </div>
                 </div>
 
@@ -283,7 +401,7 @@
     <footer>
         <div class="footer">
             <div class="footer-first">
-                <h3>Tarun's Developer Portfolio</h3>
+                <h3>Tarun's Frontend Developer Portfolio</h3>
             </div>
             <div class="footer-second">
                 <ul>
@@ -318,7 +436,7 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Video Editor'],
+            strings: ['Frontend Developer'],
             typeSpeed: 50,
         });
     </script>
